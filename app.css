@@ -7,8 +7,29 @@
 }
 
 body {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bg-ts-purple {
+  background-color: var(--primary-color);
+}
+
+.bg-ts-dark-pink {
+  background-color: var(--second-color);
+}
+
+.hover-bg-ts-pink:hover, 
+.hover-bg-ts-pink:focus {
+  background-color: var(--third-color);
+}
+
+.bg-ts-pink {
+  background-color: var(--third-color);
+}
+
+.bg-ts-yellow {
+  background-color: var(--forth-color);
 }
 
 .mono {
