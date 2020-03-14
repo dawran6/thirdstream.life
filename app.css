@@ -19,7 +19,7 @@ body {
   background-color: var(--second-color);
 }
 
-.hover-bg-ts-pink:hover, 
+.hover-bg-ts-pink:hover,
 .hover-bg-ts-pink:focus {
   background-color: var(--third-color);
 }
@@ -47,4 +47,8 @@ body {
 .diagnal-box:before {
   content: "";
   position: absolute;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
