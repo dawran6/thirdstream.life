@@ -1,17 +1,21 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #003;
+  background: #381460;
   color: #fff;
-  padding-top: 8em;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* 
 article {
   transform: skewy(-11deg);
   margin: 0 auto;
   padding: 1.5em;
   max-width: 42em;
-}
-
+} */
+/* 
 h1 {
   max-width: 42em;
   margin: 0 auto;
@@ -19,9 +23,9 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 3em;
-}
+} */
 
-p {
+/* p {
   font-size: 1.25em;
   transform: skewY(var(--angle));
   margin: 0em auto 0em;
@@ -33,4 +37,8 @@ p {
   font-weight: 900;
   padding: 0.5em;
   text-transform: uppercase;
+} */
+
+.skewy {
+  transform: skewY(-11deg);
 }
