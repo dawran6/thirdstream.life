@@ -19,9 +19,9 @@ body {
   background-color: var(--second-color);
 }
 
-.hover-bg-ts-pink:hover,
-.hover-bg-ts-pink:focus {
-  background-color: var(--third-color);
+.hover-ts-pink:hover,
+.hover-ts-pink:focus {
+  color: var(--third-color);
 }
 
 .bg-ts-pink {
@@ -51,4 +51,8 @@ body {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.mw-20rem {
+  max-width: 20rem;
 }
