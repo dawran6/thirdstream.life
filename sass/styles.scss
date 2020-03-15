@@ -36,19 +36,6 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-.skewy {
-  transform: skewY(-11deg);
-}
-
-.diagnal-box {
-  position: relative;
-}
-
-.diagnal-box:before {
-  content: "";
-  position: absolute;
-}
-
 .justify-evenly {
   justify-content: space-evenly;
 }
