@@ -25,7 +25,7 @@
       <itunes:email>{{ config.extra.contact_email }}</itunes:email>
     </itunes:owner>
     <itunes:image href="{{ config.base_url ~ '/cover.png' }}"/>
-    <itunes:category text="Society & Culture">
+    <itunes:category text="Society &amp; Culture">
       <itunes:category text="Personal Journals"/>
     </itunes:category>
 
