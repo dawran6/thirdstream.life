@@ -12,4 +12,7 @@ template = "page.html"
 
 # Your own data.
 [extra]
+episode = 1
+cover = "/ep1_cover.png"
+duration = "37:10"
 +++
