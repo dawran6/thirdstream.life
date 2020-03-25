@@ -5,19 +5,21 @@
 {% endblock htmltitle %}
 
 {% block title %}
+<h2 class="tc f4 f3-m f2-l white mv5 mw7 center">
 {{ page.title }}
+</h2>
 {% endblock title %}
 
 {% block body %}
 <div class="pa4 bg-white measure-wide center tl br3">
+  {{ page.content | safe }}
   <a id="player"
-    class="db bg-ts-dark-pink br3 pa3 link tc white mb4"
+    class="db bg-ts-dark-pink br3 pa3 link tc white mt4"
     alt="Play Episode"
     href="{{ page.extra.url }}"
     onclick="showPlayer('{{ page.extra.url }}'); return false;">
 	  <i>►</i> Play Episode
   </a>
-  {{ page.content | safe }}
 </div>
 {% endblock body %}
 

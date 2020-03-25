@@ -55,7 +55,9 @@
       </a>
     </div>
     <div class="dtc-l ts-purple vh-100-l v-mid-l w-two-thirds-l tc">
-      <h1 class="tc f3 f2-m f1-l white mv4 mw7 center">{% block title %}Hi, we are <span class="ttu">Third Stream</span>!{% endblock title %}</h1>
+      {% block title %}
+      <h1 class="tc f3 f2-m f1-l white mv4 mw7 center">Hi, we are <span class="ttu">Third Stream</span>!</h1>
+      {% endblock title %}
       {% block body %}
       <div class="flex flex-wrap justify-evenly">
         <article class="mw-20rem bg-white br3 pa3 pa4-ns mv3 mh3 ba b--black-10">
