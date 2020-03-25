@@ -2,7 +2,7 @@
 base_url = "https://thirdstream.life"
 
 # The site title and description; used in RSS by default.
-title = "Third Stream Podcast"
+title = "Third Stream"
 description = "A podcast that does not talk about mainstream."
 
 # The default language; used in RSS.

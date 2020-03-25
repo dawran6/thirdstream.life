@@ -4,28 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Third Stream</title>
+  <title>{% block htmltitle %}{{ config.title }}{% endblock htmltitle %}</title>
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="tachyons.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="{{ get_url(path="normalize.css") }}">
+  <link rel="stylesheet" href="{{ get_url(path="tachyons.min.css") }}">
+  <link rel="stylesheet" href="{{ get_url(path="styles.css") }}">
+  <link rel="icon" href="{{ get_url(path="favicon.png") }}">
   <meta name="twitter:card" content="summary" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thirdstream.life/" />
   <meta property="og:title" content="Third Stream: a Non-mainstream Podcast" />
   <meta property="og:description" content="We share our thoughts about those non-mainstream stuffs." />
-  <meta property="og:image" content="https://thirdstream.life/socialimage-1200x628.png" />
+  <meta property="og:image" content="{{ get_url(path="socialimage-1200x628.png") }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="628" />
   <meta property="og:image:type" content="image/png" />
+  {% if config.generate_rss %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml') }}">
+  {% endif %}
 </head>
 
 <body>
   <section class="dt-l w-100">
     <div class="dtc-l bg-ts-yellow vh-100-l v-mid-l w-third-l tc pv4">
       <div class="tc">
-        <img class="w5" src="logo_vertical.svg" alt="Logo">
+        <img class="w5" src="{{ get_url(path="logo_vertical.svg") }}" alt="Logo">
       </div>
       <a class="icon dib h2 w2 mh2" href="https://podcasts.apple.com/us/podcast/third-stream-podcast/id1503447781"
         target="_blank">
@@ -51,11 +54,12 @@
       </a>
     </div>
     <div class="dtc-l ts-purple vh-100-l v-mid-l w-two-thirds-l tc">
-      <h1 class="tc f3 f2-m f1-l white mv4 ph3">Hi, we are <span class="ttu">Third Stream</span>!</h1>
+      <h1 class="tc f3 f2-m f1-l white mv4 ph3">{% block title %}Hi, we are <span class="ttu">Third Stream</span>!{% endblock title %}</h1>
+      {% block body %}
       <div class="flex flex-wrap justify-evenly">
         <article class="mw-20rem bg-white br3 pa3 pa4-ns mv3 mh3 ba b--black-10">
           <div class="tc">
-            <img src="headshot_isabella.jpg" class="br-100 h3 w3 dib" alt="Photo of Isabella Chen">
+            <img src="{{ get_url(path="headshot_isabella.jpg") }}" class="br-100 h3 w3 dib" alt="Photo of Isabella Chen">
             <h1 class="f3">Isabella Chen</h1>
             <hr class="mw3 bb bw1 b--black-10">
           </div>
@@ -67,7 +71,7 @@
         </article>
         <article class="mw-20rem bg-white br3 pa3 pa4-ns mv3 mh3 ba b--black-10">
           <div class="tc">
-            <img src="headshot_dawran.jpg" class="br-100 h3 w3 dib" alt="Photo of Daw-Ran Liou">
+            <img src="{{ get_url(path="headshot_dawran.jpg") }}" class="br-100 h3 w3 dib" alt="Photo of Daw-Ran Liou">
             <h1 class="f3">Daw-Ran Liou</h1>
             <hr class="mw3 bb bw1 b--black-10">
           </div>
@@ -78,6 +82,7 @@
           </p>
         </article>
       </div>
+      {% endblock body %}
 
       <footer class="white-80 pv4 ph4">
         <p class="f5"><span class="dib mr4 mr5-ns">©2020 Isabella Chen and Daw-Ran Liou</span>

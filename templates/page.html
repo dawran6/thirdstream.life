@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block htmltitle %}
+{{ page.title }}
+{% endblock htmltitle %}
+
+{% block title %}
+{{ page.title }}
+{% endblock title %}
+
+{% block body %}
+<div class="pa4 bg-white measure-wide center tl br3">
+  {{ page.content | safe }}
+</div>
+{% endblock body %}
