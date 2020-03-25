@@ -10,6 +10,22 @@
 
 {% block body %}
 <div class="pa4 bg-white measure-wide center tl br3">
+  <a id="player"
+    class="db bg-ts-dark-pink br3 pa3 link tc white mb4"
+    alt="Play Episode"
+    href="{{ page.extra.url }}"
+    onclick="showPlayer('{{ page.extra.url }}'); return false;">
+	  <i>►</i> Play Episode
+  </a>
   {{ page.content | safe }}
 </div>
 {% endblock body %}
+
+{% block script %}
+<script>
+ function showPlayer(filepath) {
+   var player = document.getElementById("player")
+   player.innerHTML = '<audio id="episode-audio" class="w-100" autoplay controls src="'+ filepath +'"></audio>';
+ }
+</script>
+{% endblock script %}
