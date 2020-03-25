@@ -1,3 +1,5 @@
+{% import "macros.html" as macros %}
+
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
      xmlns:atom="http://www.w3.org/2005/Atom"
@@ -42,11 +44,11 @@
       <link>{{ page.permalink | escape_xml | safe }}</link>
       <guid>{{ page.permalink | escape_xml | safe }}</guid>
       <description>{{ page.description }}</description>
-      <content:encoded>{{ page.content | safe}}</content:encoded>
+      <content:encoded>{{ macros::cdata(content=page.content)}}</content:encoded>
       <enclosure url="{{ page.extra.url | safe}}" type="audio/mpeg" />
 
       <itunes:author>{{ config.extra.author }}</itunes:author>
-      <itunes:summary>{{ page.description }}</itunes:summary>
+      <itunes:summary>{{ page.content | escape_xml | safe }}</itunes:summary>
       <itunes:episode>{{ page.extra.episode }}</itunes:episode>
       <itunes:image href="{{ config.base_url ~ page.extra.cover }}"/>
       <itunes:duration>{{ page.extra.duration }}</itunes:duration>

@@ -5,12 +5,8 @@ date = 2020-03-18
 slug = "ep1-why-do-we-want-to-move-away-from-california"
 template = "page.html"
 
-# The taxonomies for this page. The keys need to be the same as the taxonomy
-# names configured in `config.toml` and the values are an array of String objects. For example,
-# tags = ["rust", "web"].
 [taxonomies]
 
-# Your own data.
 [extra]
 episode = 1
 cover = "/ep1_cover.png"
@@ -19,12 +15,12 @@ url = "https://anchor.fm/s/17184b44/podcast/play/11244959/https%3A%2F%2Fd3ctxlq1
 length = "53468800"
 +++
 
-<![CDATA[<p>Hi! 歡迎收聽Third Stream, 在這裡你會聽到我們分享一些非主流的人事物 &nbsp;第一集想要分享的是為什麼我們想要搬離舒適的加州呢？</p>
+<p>Hi, 歡迎收聽Third Stream! 在這裡你會聽到我們分享一些非主流的人事物</p>
+<p>第一集想要分享的是為什麼我們想要搬離舒適的加州呢？</p>
 <p>本集內容</p>
 <p>-背景介紹 0:20</p>
 <p>-加州吸引人的地方 15:44</p>
 <p>-加州的推力 19:35</p>
-<p>-未來想要搬去的城市 23:57 &nbsp;</p>
+<p>-未來想要搬去的城市 23:57</p>
 <p><br></p>
 <p>Music from <a href="https://www.youtube.com/redirect?redir_token=bDwWJkV6ZBUgdP7bA2lETaEULnl8MTU4NDY3NjUzMUAxNTg0NTkwMTMx&amp;q=https%3A%2F%2Ftfbeats.com%2F&amp;v=YvCqyjfYUbs&amp;event=video_description" rel="nofollow" target="_blank">https://tfbeats.com/</a></p>
-]]>
