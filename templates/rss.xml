@@ -36,7 +36,6 @@
     <googleplay:description>{{ config.description }}</googleplay:description>
     <googleplay:image href="{{ config.base_url ~ '/cover.png' }}"/>
 
-    <ttl>{{ config.extra.ttl }}</ttl>
     {% for page in pages %}
     <item>
       <title>{{ page.title }}</title>
