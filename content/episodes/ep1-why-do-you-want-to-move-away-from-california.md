@@ -4,6 +4,7 @@ description = "為什麼我們想要搬離舒適的加州呢？"
 date = 2020-03-18
 slug = "ep1-why-do-we-want-to-move-away-from-california"
 template = "page.html"
+aliases = ["ep1-why-do-we-want-to-move-away-from-california"]
 
 [taxonomies]
 

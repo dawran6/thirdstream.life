@@ -4,6 +4,7 @@ description = "遠端工作Q&A"
 date = 2020-03-25
 slug = "ep2-remote-working-q-and-a"
 template = "page.html"
+aliases = ["ep2-remote-working-q-and-a"]
 
 [taxonomies]
 
