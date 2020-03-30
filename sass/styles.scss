@@ -11,6 +11,10 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.word-break {
+  word-break: break-all;
+}
+
 .bg-ts-purple {
   background-color: var(--primary-color);
 }
