@@ -26,9 +26,9 @@
 </head>
 
 <body>
-  <section class="dt-l w-100">
-    <div class="dtc-l bg-ts-yellow vh-100-l v-mid-l w-third-l tc pv4">
-      <div class="tc">
+  <section class="dt-l w-100 vh-100-l">
+    <div class="dtc-l bg-ts-yellow vh-100-l v-mid-l w-third-l tc pv5">
+      <div>
         <a href="{{ config.base_url }}">
           <img class="w5" src="{{ get_url(path="logo_vertical.svg") }}" alt="Logo">
         </a>
@@ -55,14 +55,27 @@
             d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
         </svg>
       </a>
+
+      <div class="mv4 mh4 mh5-ns">
+        <a class="f5 link dim br3 ph4 pv2 mb2 dib white bg-ts-pink inline-flex items-center" href="{{ get_url(path="/episodes" )}}">
+          <span class="pr1">Episodes</span>
+          <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+            <title>chevronRight icon</title>
+            <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="dtc-l ts-purple vh-100-l v-mid-l w-two-thirds-l tc">
+    <div class="ts-purple vh-100-l v-mid-l overflow-y-scroll-l">
       {% block title %}
-      <h1 class="tc f3 f2-m f1-l white mv4 mw7 center">Hi, we are <span class="ttu">Third Stream</span>!</h1>
+      <div class="mt5 mb4 mh4 mh5-ns tc">
+        <h1 class="f3 f2-m f1-l white">Third Stream Podcast</h1>
+        <p class="i white-60">A podcast that doesn't talk about mainstream</p>
+      </div>
       {% endblock title %}
       {% block body %}
-      <div class="flex flex-wrap justify-evenly">
-        <article class="mw-20rem bg-white br3 pa3 pa4-ns mv3 mh3 ba b--black-10">
+      <div class="mv4 flex flex-wrap justify-evenly mh4 mh5-ns">
+        <article class="mw-20rem bg-white br3 pa3 pa4-ns ma3 ba b--black-10">
           <div class="tc">
             <img src="{{ get_url(path="headshot_isabella.jpg") }}" class="br-100 h3 w3 dib" alt="Photo of Isabella Chen">
             <h1 class="f3">Isabella Chen</h1>
@@ -74,7 +87,7 @@
             friends.
           </p>
         </article>
-        <article class="mw-20rem bg-white br3 pa3 pa4-ns mv3 mh3 ba b--black-10">
+        <article class="mw-20rem bg-white br3 pa3 pa4-ns ma3 ba b--black-10">
           <div class="tc">
             <img src="{{ get_url(path="headshot_dawran.jpg") }}" class="br-100 h3 w3 dib" alt="Photo of Daw-Ran Liou">
             <h1 class="f3">Daw-Ran Liou</h1>
@@ -89,9 +102,9 @@
       </div>
       {% endblock body %}
 
-      <footer class="white-80 pv4 ph4">
+      <footer class="white-80 mv5 mh4 mh5-ns tc">
         <p class="f5"><span class="dib mr4 mr5-ns">©2020 Isabella Chen and Daw-Ran Liou</span>
-          <a class="white-80 hover-pink" href="mailto:thirdstream.it@gmail.com">thirdstream.it@gmail.com</a>
+          <a class="white-80 hover-pink" href="mailto:thirdstreamit@gmail.com">thirdstreamit@gmail.com</a>
         </p>
       </footer>
     </div>

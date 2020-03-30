@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block htmltitle %}
+{{ section.title }}
+{% endblock htmltitle %}
+
+{% block title %}
+<h2 class="tc f4 f3-m f2-l white mv5 mw7 center">
+  {{ section.title }}
+</h2>
+{% endblock title %}
+
+{% block body %}
+<ul class="list mw7 center mh3 ph3">
+  {% for page in section.pages | reverse %}
+  <li class="pv3 ph3 ph4-l bb b--black-10 bg-white br3 mv3">
+    <h3>
+      <a class="link black dim f3 underline" href="{{ page.permalink }}">{{ page.title }}</a>
+    </h3>
+    {{ page.summary | safe }}
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock body %}
