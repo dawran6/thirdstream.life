@@ -4,9 +4,7 @@
 {{ page.title }}
 {% endblock htmltitle %}
 
-{% block cover %}
-{{ config.base_url ~ page.extra.cover }}
-{% endblock cover %}
+{% block cover %}{{ get_url(path=page.extra.cover) }}{% endblock cover %}
 
 {% block title %}
 <div class="mv5">
