@@ -4,6 +4,10 @@
 {{ page.title }}
 {% endblock htmltitle %}
 
+{% block cover %}
+{{ config.base_url ~ page.extra.cover }}
+{% endblock cover %}
+
 {% block title %}
 <div class="mv5">
   <h2 class="tc f4 f3-m f2-l white mw7 center">
