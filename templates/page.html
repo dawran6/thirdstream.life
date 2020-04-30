@@ -7,24 +7,28 @@
 {% block cover %}{{ get_url(path=page.extra.cover) }}{% endblock cover %}
 
 {% block title %}
-<div class="mv5">
-  <h2 class="tc f4 f3-m f2-l white mw7 center">
-    {{ page.title }}
-  </h2>
-</div>
 {% endblock title %}
 
 {% block body %}
-<div class="pa4 bg-white measure-wide center tl br3 word-break">
-  <img src="{{ get_url(path=page.extra.cover) }}" alt="Cover image" class="center db w5 mb4 br3" />
-  {{ page.content | safe }}
-  <a id="player"
-    class="db bg-ts-dark-pink br3 pa3 link tc white mt4"
-    alt="Play Episode"
-    href="{{ page.extra.url }}"
-    onclick="showPlayer('{{ page.extra.url }}'); return false;">
-	  <i>►</i> Play Episode
-  </a>
+<div class="mw7 center mh3 ph3">
+  <article class="pv3 ph3 ph4-l bb b--black-10 bg-white br3 mv3">
+    <div class="db pv4 ph3 ph0-l center">
+        <div class="mb4 mb0-ns measure center">
+          <img src="{{ get_url(path=page.extra.cover) }}" alt="Cover image" class="db" />
+        </div>
+        <div class="measure center">
+          <h1>{{ page.title }}</h1>
+          <a id="player"
+             class="db bg-ts-dark-pink br3 pa3 link tc white mt4"
+             alt="Play Episode"
+             href="{{ page.extra.url }}"
+             onclick="showPlayer('{{ page.extra.url }}'); return false;">
+	    <i>►</i> Play Episode
+          </a>
+          {{ page.content | safe }}
+        </div>
+      </div>
+  </article>
 </div>
 {% endblock body %}
 
