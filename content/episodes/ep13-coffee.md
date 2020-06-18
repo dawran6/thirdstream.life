@@ -2,7 +2,7 @@
 title = "EP13: Coffee"
 description = "Discussion on coffee"
 date = 2020-06-10
-slug = "ep12-coffee"
+slug = "ep13-coffee"
 template = "page.html"
 
 [taxonomies]
