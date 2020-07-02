@@ -37,6 +37,9 @@ https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 ["Beware online filter bubble" by Eli Pariser](https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles)
 https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles
 
+[DuckDuckGo Privacy Newsletter](https://duckduckgo.com/newsletter)
+https://duckduckgo.com/newsletter
+
 [iTunes](https://podcasts.apple.com/us/podcast/third-stream-podcast/id1503447781)
 https://podcasts.apple.com/us/podcast/third-stream-podcast/id1503447781
 
