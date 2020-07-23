@@ -11,7 +11,7 @@ template = "page.html"
 episode = 19
 cover = "/ep19_cover.png"
 duration = "1937"
-url = "https://space.dawranliou.com.sfo2.digitaloceanspaces.com/ThirdStream/EP19/EP19_mixdown.mp3"
+url = "https://anchor.fm/s/17184b44/podcast/play/16966446/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-6-23%2Fb38113f2-66f1-a3d5-c095-29ef1546d357.mp3"
 length = "46496823"
 +++
 
