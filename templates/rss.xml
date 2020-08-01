@@ -16,7 +16,7 @@
     <language>{{ config.default_language }}</language>
     <copyright>{{ config.extra.copyright }}</copyright>
     <atom:link href="{{ feed_url | safe }}" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>{{ last_build_date | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
+    <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
 
     <itunes:author>{{ config.extra.author }}</itunes:author>
     <itunes:summary>{{ config.description }}</itunes:summary>
