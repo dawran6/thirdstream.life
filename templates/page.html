@@ -13,32 +13,32 @@
 <div class="mw7 center mh3 ph3 word-break">
   <article class="pv3 ph3 ph4-l bb b--black-10 bg-white br3 mv3">
     <div class="db pv4 ph3 ph0-l center">
-        <div class="mb4 mb0-ns measure center">
-          <img src="{{ get_url(path=page.extra.cover) }}" alt="Cover image" class="db" />
-        </div>
-        <div class="measure center">
-          <h1>{{ page.title }}</h1>
-          <a id="player"
-             class="db bg-ts-dark-pink br3 pa3 link tc white mt4"
-             alt="Play Episode"
-             href="{{ page.extra.url }}"
-             onclick="showPlayer('{{ page.extra.url }}'); return false;">
-	    <i>►</i> Play Episode
-          </a>
-          {{ page.content | safe }}
-        </div>
+      <div class="mb4 mb0-ns measure center">
+        <img src="{{ get_url(path=page.extra.cover) }}" alt="Cover image" class="db" />
       </div>
-      <div id='discourse-comments'></div>
+      <div class="measure center">
+        <h1>{{ page.title }}</h1>
+        <a id="player"
+           class="db bg-ts-dark-pink br3 pa3 link tc white mt4"
+           alt="Play Episode"
+           href="{{ 'https://space.dawranliou.com/ThirdStream/episodes/ep-' ~ page.extra.episode ~ '-mixdown.mp3' }}"
+           onclick="showPlayer('{{ 'https://space.dawranliou.com/ThirdStream/episodes/ep-' ~ page.extra.episode ~ '-mixdown.mp3' }}'); return false;">
+          <i>►</i> Play Episode
+        </a>
+        {{ page.content | safe }}
+      </div>
+    </div>
+    <div id='discourse-comments'></div>
 
-      <script type="text/javascript">
-        DiscourseEmbed = { discourseUrl: 'https://forum.thirdstream.life/',
-                           discourseEmbedUrl: '{{ 'https://thirdstream.life/' ~ page.path }}' };
+    <script type="text/javascript">
+      DiscourseEmbed = { discourseUrl: 'https://forum.thirdstream.life/',
+                         discourseEmbedUrl: '{{ 'https://thirdstream.life/' ~ page.path }}' };
 
-        (function() {
-            var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-            d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-        })();
+      (function() {
+         var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+         d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+       })();
       </script>
   </article>
 </div>
@@ -46,9 +46,9 @@
 
 {% block script %}
 <script>
- function showPlayer(filepath) {
-   var player = document.getElementById("player")
-   player.innerHTML = '<audio id="episode-audio" class="w-100" autoplay controls src="'+ filepath +'"></audio>';
- }
+  function showPlayer(filepath) {
+    var player = document.getElementById("player")
+    player.innerHTML = '<audio id="episode-audio" class="w-100" autoplay controls src="'+ filepath +'"></audio>';
+  }
 </script>
 {% endblock script %}
