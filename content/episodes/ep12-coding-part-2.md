@@ -11,7 +11,6 @@ template = "page.html"
 episode = 12
 cover = "/ep12_cover.png"
 duration = "2047"
-url = "https://anchor.fm/s/17184b44/podcast/play/14578529/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2020-5-1%2F78511017-44100-2-50186a8b92bab.mp3"
 length = "49166719"
 +++
 

@@ -12,7 +12,6 @@ aliases = ["ep2-remote-working-q-and-a"]
 episode = 2
 cover = "/ep2_cover.png"
 duration = "36:26"
-url = "https://anchor.fm/s/17184b44/podcast/play/11399341/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2020-2-23%2F58274419-44100-2-dc1a36b6ccf1e.mp3"
 length = "52406222"
 +++
 

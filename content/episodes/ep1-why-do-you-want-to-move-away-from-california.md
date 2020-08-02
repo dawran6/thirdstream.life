@@ -12,7 +12,6 @@ aliases = ["ep1-why-do-we-want-to-move-away-from-california"]
 episode = 1
 cover = "/ep1_cover.png"
 duration = "37:10"
-url = "https://anchor.fm/s/17184b44/podcast/play/11244959/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2020-2-19%2F57416849-44100-2-45db8ca29c28.mp3"
 length = "53468800"
 +++
 
