@@ -20,8 +20,8 @@ length = "49634695"
 
 <!-- more -->
 
-這集裡面所聊到關於成名的文章:
-https://tim.blog/2020/02/02/reasons-to-not-become-famous/
+這集裡面所聊到關於成名的文章
+[https://tim.blog/2020/02/02/reasons-to-not-become-famous/](https://tim.blog/2020/02/02/reasons-to-not-become-famous/)
 
 ---
 
