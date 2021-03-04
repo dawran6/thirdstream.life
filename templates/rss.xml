@@ -43,7 +43,7 @@
       <link>{{ page.permalink | escape_xml | safe }}</link>
       <guid>{{ page.permalink | escape_xml | safe }}</guid>
       <description>{{ macros::cdata(content=page.content) }}</description>
-      <enclosure url="{{ 'https://space.dawranliou.com/ThirdStream/episodes/ep-' ~ page.extra.episode ~ '-mixdown.mp3' }}" type="audio/mpeg" length="{{ page.extra.length }}" />
+      <enclosure url="{{ 'https://space-dawranliou-com.sfo3.digitaloceanspaces.com/ThirdStream/episodes/ep-' ~ page.extra.episode ~ '-mixdown.mp3' }}" type="audio/mpeg" length="{{ page.extra.length }}" />
 
       <itunes:author>{{ config.extra.author }}</itunes:author>
       <itunes:summary>{{ page.content | escape_xml | safe }}</itunes:summary>
